@@ -4,7 +4,15 @@
     <title>SearchPage</title>
   </head>
   <body>
-     <h1>Welcome to <%=shopName%> Shop</h1>
+     <h1>Welcome to <%=shopName%></h1>
     <h2>search your item</h2>
+      <form action="/search_result" method="GET">
+        <!--field name-->
+      Name: <input id="name" type="text" name="search_text">
+      <!--field category-->
+      Category: <input id="category" type="text" name="category">
+      <!--field button OK-->
+      <input type="submit" value="OK" >
+    </form>
     </body>
 </html>

@@ -2,7 +2,17 @@
 const express = require("express");
 const router = express.Router();
 // Define our data
-var shopData = {shopName: "osteria tufo"};
+var shopData = {shopName: "Osteria Tufo", 
+                productCategories:[
+                    "starters",
+                    "pasta mains", 
+                    "meat mains", 
+                    "fish mains", 
+                    "side orders",
+                    "desserts",
+                    "wine",
+                    "soft drinks"
+                ]};
 
 // Handle the main routes
 router.get("/", (req, res) => {

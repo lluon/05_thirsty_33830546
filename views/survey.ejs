@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <!-- Include the head partial -->
+  <%- include('partials/head') %>
+  <body>
+    <h1>Customer Survey</h1>
+    <h2><%= shopName %></h2>
+
+    <form action="/survey" method="POST">
+      <h3>Your Details</h3>
+
+      <label for="first">First Name:</label><br>
+      <input type="text" id="first" name="first" required><br><br>
+
+      <label for="last">Surname:</label><br>
+      <input type="text" id="last" name="last" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <h3>Survey Questions</h3>
+
+      <label for="age">How old are you?</label><br>
+      <input type="text" id="age" name="age" required><br><br>
+
+      <p>Which of the following drinks categories do you consume?</p>
+      <% for (let i = 0; i < productCategories.length; i++) { 
+           if (productCategories[i].includes("drinks") || productCategories[i].includes("wine")) { %>
+        <input type="radio" id="drink_<%= i %>" name="drinkCategory" value="<%= productCategories[i] %>" required>
+        <label for="drink_<%= i %>"><%= productCategories[i] %></label><br>
+      <% } } %>
+      <br>
+
+      <label>
+        <input type="checkbox" name="isStudent" value="true"> Are you a student?
+      </label>
+      <br><br>
+
+      <input type="submit" value="Submit Survey">
+    </form>
+  </body>
+</html>

@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-  color: #201e9e;
+  color: #262299;
   font-family: "EB Garamond", serif;
   font-weight: <800>;
   font-size: 72px;
@@ -56,7 +56,7 @@ ul {
 
 li {
  list-style: square;
-  color: #ffffff;
+  color: #4f6267;
   font-family: "EB Garamond", serif;
   font-weight: <400>;
   font-size: 18px;
@@ -70,5 +70,4 @@ p {
   font-weight: <400>;
   font-size: 24px;
   font-style: normal;
-  margin: 40px;
 }

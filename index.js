@@ -1,5 +1,5 @@
 // Setup express and ejs
-var express = require ('express')
+var express = require('express')
 var ejs = require('ejs')
 
 // Create the express application object
@@ -12,7 +12,6 @@ app.set('view engine', 'ejs');
 // serve static files from the 'public' directory
 app.use(express.static('public'));
 
-
 // Set up the body parser 
 app.use(express.urlencoded({ extended: true })); 
 
@@ -22,4 +21,3 @@ app.use('/', mainRoutes);
 
 // Start the web app listening
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
-

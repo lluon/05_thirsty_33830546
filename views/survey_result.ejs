@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <!-- Include the head partial -->
+  <%- include('partials/head') %>
+  <body>
+    <h1>Survey Results</h1>
+    <h2><%= shopName %></h2>
+
+    <p><strong>First Name:</strong> <%= first %></p>
+    <p><strong>Surname:</strong> <%= last %></p>
+    <p><strong>Email:</strong> <%= email %></p>
+    <p><strong>Age:</strong> <%= age %></p>
+    <p><strong>Preferred Drink Category:</strong> <%= drinkCategory %></p>
+    <p><strong>Student:</strong> <%= isStudent %></p>
+
+    <br>
+    <a href="/survey" style="color:#11a8df;">Back to Survey</a>
+  </body>
+</html>

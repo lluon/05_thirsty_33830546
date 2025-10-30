@@ -76,5 +76,29 @@ router.post("/register", (req, res) => {
   res.send(`Hello ${first} ${last}, you are now registered! We will send an email to you at ${email}.`);
 });
 
-//  EXPORT ROUTER 
+// Survey page (GET)
+router.get("/survey", (req, res) => {
+  res.render("survey.ejs", { 
+    ...shopData, 
+    pageTitle: "Customer Survey | " + shopData.shopName 
+  });
+});
+
+// Survey submission (POST)
+router.post("/survey", (req, res) => {
+  const { first, last, email, age, drinkCategory, isStudent } = req.body;
+
+  res.render("survey_result.ejs", {
+    ...shopData,
+    pageTitle: "Survey Results | " + shopData.shopName,
+    first,
+    last,
+    email,
+    age,
+    drinkCategory,
+    isStudent: isStudent ? "Yes" : "No"
+  });
+});
+
+// EXPORT ROUTER 
 module.exports = router;

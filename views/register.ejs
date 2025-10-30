@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
-  <head>
-    <title><%= shopName %></title>
-  </head>
+  <!-- Include the head partial (contains <head>, <title>, fonts, CSS) -->
+    <%- include('partials/head') %>
   <body>
-    <h1>This is the <%= shopName %> register page</h1>
+    <h1>This is </h1>
+    <h2><%= shopName %></h2>
+    <h1>register page</h1><br><br><br>
     <form method="POST" action="/register">
       
       <label for="first">First Name:</label>

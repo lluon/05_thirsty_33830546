@@ -1,16 +1,16 @@
 <!doctype html>
 <html>
-  <head>
-    <title>SearchPage</title>
-  </head>
+  <!-- Include the head partial (contains <head>, <title>, fonts, CSS) -->
+    <%- include('partials/head') %>
   <body>
-     <h1>Welcome to <%=shopName%></h1>
-    <h2>search your item</h2>
+    <h1>Welcome to</h1>
+    <h2><%=shopName%></h2>
+    <h3>search your item</h3>
       <form action="/search_result" method="GET">
         <!--field name-->
-      Name: <input id="name" type="text" name="search_text">
+      Name:   <input id="name" type="text" name="search_text"><br><br>
       <!--field category-->
-      Category: <input id="category" type="text" name="category">
+      Category:   <input id="category" type="text" name="category">
       <!--field button OK-->
       <input type="submit" value="OK" >
     </form>

@@ -1,0 +1,74 @@
+body {
+  font-family: 'EB Garamond', serif; /* Updated from Book, sans-serif */
+  background-color: #040227;
+  font-weight: <400>;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 40px;
+}
+
+h1 {
+  color: #11a8df;
+  font-family: "EB Garamond", serif;
+  font-weight: <400>;
+  font-size: 36px;
+  text-transform: lowercase;
+  font-style: italic;
+  line-height: 2%;
+
+
+}
+
+h2 {
+  color: #ffffff;
+  font-family: "EB Garamond", serif;
+  font-weight: <800>;
+  font-size:100px;
+  text-transform: uppercase;
+  line-height: 80%;
+  font-style: normal;
+}
+
+h3 {
+  color: #201e9e;
+  font-family: "EB Garamond", serif;
+  font-weight: <800>;
+  font-size: 72px;
+  text-transform: uppercase;
+  line-height: 80%;
+  font-style: normal;
+}
+
+ul {
+  list-style: square;
+  color: #3b3a75;
+  font-family: "EB Garamond", serif;
+  font-weight: <400>;
+  font-size: 24px;
+  line-height: 80%;
+  font-style: italic;
+
+
+
+
+}
+
+li {
+ list-style: square;
+  color: #ffffff;
+  font-family: "EB Garamond", serif;
+  font-weight: <400>;
+  font-size: 24px;
+  line-height: 80%;
+  font-style: italic;
+}
+
+p {
+    color: #b8b8d4;
+  font-family: "EB Garamond", serif;
+  font-weight: <400>;
+  font-size: 24px;
+  font-style: normal;
+  margin: 40px;
+}
